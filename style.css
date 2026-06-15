@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+.heading{
+    display: flex;
+    margin-top: 20px;
+
+}
+.hed1{
+margin-left: 30px;
+margin-right: 100px;
+
+}
+.head2{
+    margin-right: 20px;
+
+}
+.for{
+    margin-right: 20px;
+}
+.about{
+    margin-right: 20px;
+}
+.search{
+    margin-left: 80px;
+    
+}
+#search{
+    border-radius: 5px;
+    height: 27px;
+    width: 180px;
+}
+.lo{
+    margin-left: 50px;
+    padding-right: 10px;
+}
