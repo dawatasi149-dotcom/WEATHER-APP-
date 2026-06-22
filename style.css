@@ -1,38 +1,83 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.heading {
+  display: flex;
+  margin-top: 20px;
+}
+.hed1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-left: 3.5rem;
+  margin-right: 25rem;
+}
+.head2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
 
+  margin-left: 1rem;
+  margin-right: 5rem;
 }
-.heading{
-    display: flex;
-    margin-top: 20px;
+.for {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-right: 5rem;
+}
+.about {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-right: 5rem;
+}
+.search {
+  margin-top: 1rem;
+  margin-left: 9rem;
+}
+#search {
+  border: 0.1rem solid black;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.7rem;
+  height: 2rem;
+  width: 15rem;
+  padding-left: 1rem;
+}
+.lo {
+  border: 0.1rem solid black;
+  border-radius: 50%;
+  height: 1.4rem;
+  width: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  margin-top: 1.4rem;
+  margin-left: 3rem;
 }
-.hed1{
-margin-left: 30px;
-margin-right: 100px;
-
+#iglass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid black;
+  height: 1.5rem;
+  width: 1.4rem;
+  font-weight: 500;
 }
-.head2{
-    margin-right: 20px;
-
+.for:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
-.for{
-    margin-right: 20px;
+.about:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
-.about{
-    margin-right: 20px;
+.head2:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
-.search{
-    margin-left: 80px;
-    
-}
-#search{
-    border-radius: 5px;
-    height: 27px;
-    width: 180px;
-}
-.lo{
-    margin-left: 50px;
-    padding-right: 10px;
+.lo:hover {
+  cursor: pointer;
 }
