@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: "Poppins", sans-serif;
 }
 .heading {
   display: flex;
@@ -31,11 +32,15 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin-top: 1rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 .search {
+  display: flex;
+  align-items: center;
+
   margin-top: 1rem;
-  margin-left: 9rem;
+  margin-left: 10rem;
+  margin-right: 5rem;
 }
 #search {
   border: 0.1rem solid black;
@@ -58,14 +63,19 @@
   margin-left: 3rem;
 }
 #iglass {
+  
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 0.1rem solid black;
-  height: 1.5rem;
-  width: 1.4rem;
+  padding-left: 0.3rem;
+  border-left: 0.1rem solid black;
+  height: 2rem;
+  margin: 14.3rem;
   font-weight: 500;
+cursor: pointer;
 }
+
 .for:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -80,4 +90,46 @@
 }
 .lo:hover {
   cursor: pointer;
+}
+.content {
+  height: 18rem;
+  width: 20rem;
+  margin-top: 2rem;
+  margin-left: 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.place {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.date {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.temp {
+  margin-top: 1rem;
+  font-size: 6rem;
+}
+.cloud {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.updown {
+  display: flex;
+  margin-top: 0.3rem;
+  gap: 1rem;
+}
+#up{
+  color: red;
+
+}
+#down{
+  color:blue;
+}
+.analysis{
+  display: flex;
+  
 }

@@ -8,9 +8,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Weathr App</title>
   </head>
   <body>
@@ -25,9 +28,48 @@
         <div class="about">About</div>
         <div class="search">
           <input type="text" placeholder="search city" id="search" />
-          <i  class="fa-brands fa-sistrix" id="iglass"></i>
+          <i class="fa-brands fa-sistrix" id="iglass"></i>
         </div>
         <div class="lo"><i class="fa-solid fa-location-crosshairs"></i></div>
+      </div>
+      <div class="content">
+        <div class="place">
+          <p id="name">yarsha</p>
+          ,
+          <p id="place">Nepal</p>
+        </div>
+        <div class="date">
+          <p id="day">sunday</p>
+          ,
+          <p id="date">0000</p>
+        </div>
+        <div class="temp">
+          <p id="cel">27&deg;c</p>
+        </div>
+        <div class="cloud">
+          partly cloudy
+          <div class="updown">
+            <p id="up"><i class="fa-solid fa-arrow-up-long"></i>80</p>
+            <p id="down"><i class="fa-solid fa-arrow-down-long"></i>90</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis">
+        <div class="humidity">
+          <i class="fa-solid fa-droplet"></i>humidity
+          <br />
+          <p id="percent">45&percnt;</p>
+        </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>Wind
+          <br />
+          <p id="speed">12km/h</p>
+        </div>
+        <div class="feel">
+          Fells like
+          <br />
+          <p id="feel">29&deg;c</p>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
