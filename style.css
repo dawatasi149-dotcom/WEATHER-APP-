@@ -63,7 +63,6 @@
   margin-left: 3rem;
 }
 #iglass {
-  
   position: absolute;
   display: flex;
   align-items: center;
@@ -73,7 +72,7 @@
   height: 2rem;
   margin: 14.3rem;
   font-weight: 500;
-cursor: pointer;
+  cursor: pointer;
 }
 
 .for:hover {
@@ -122,14 +121,30 @@ cursor: pointer;
   margin-top: 0.3rem;
   gap: 1rem;
 }
-#up{
+#up {
   color: red;
-
 }
-#down{
-  color:blue;
+#down {
+  color: blue;
 }
-.analysis{
+.analysis {
   display: flex;
-  
+  align-items: center;
+  margin-left: 3.6rem;
+  height: 5rem;
+  width: 28rem;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  padding-left: 1.5rem;
+  gap: 6.8rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+}
+.forcast{
+  border:0.1rem solid black;
+  height: 4rem ;
+  width: 28rem ;
+  margin-left: 65rem;
+  margin-top: -23rem;
+  border-radius: 0.9rem;
 }
