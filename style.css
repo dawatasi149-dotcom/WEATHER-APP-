@@ -141,10 +141,28 @@
   font-size: 1rem;
 }
 .forcast{
+ 
+ display:flex;
+ flex-direction: column;
+  gap: 1.7rem;
+ 
   border:0.1rem solid black;
-  height: 4rem ;
+  height: 25rem ;
   width: 28rem ;
   margin-left: 65rem;
   margin-top: -23rem;
   border-radius: 0.9rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  
+
+}
+
+.sat{
+  
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+
 }
