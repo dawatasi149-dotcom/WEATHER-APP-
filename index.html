@@ -21,11 +21,15 @@
       <div class="heading">
         <div class="hed1">
           <i class="fa-solid fa-cloud"></i>
-          Weather
+          Weathr
         </div>
-        <div class="head2">Home</div>
-        <div class="for">Forcast</div>
-        <div class="about">About</div>
+
+        <nav class="navlinks">
+          <div class="head2 ">Home</div>
+          <div class="for">Forcast</div>
+          <div class="about">About</div>
+        </nav>
+
         <div class="search">
           <input type="text" placeholder="search city" id="search" />
           <i class="fa-brands fa-sistrix" id="iglass"></i>
@@ -33,91 +37,170 @@
         <div class="lo"><i class="fa-solid fa-location-crosshairs"></i></div>
       </div>
 
-      <div class="content">
-        <div class="place">
-          <p id="name">yarsha</p>
-          ,
-          <p id="place">Nepal</p>
+      <div class="main">
+        <div class="left">
+          <div class="content">
+            <div class="place">
+              <p id="name">Yarsha</p>,
+              <p id="place">Nepal</p>
+            </div>
+            <div class="date">
+              <p id="day">Sunday</p>,
+              <p id="date">26 May</p>
+            </div>
+
+            <div class="temp-row">
+              <div class="temp"><p id="cel">27<sup>&deg;</sup>c</p></div>
+              <i class="fa-solid fa-cloud-sun weather-icon"></i>
+            </div>
+
+            <div class="cloud">partly cloudy</div>
+            <div class="updown">
+              <p id="up"><i class="fa-solid fa-arrow-up-long"></i>30&deg;</p>
+              <p id="down"><i class="fa-solid fa-arrow-down-long"></i>20&deg;</p>
+            </div>
+          </div>
+
+          <div class="analysis">
+            <div class="humidity">
+              <i class="fa-solid fa-droplet"></i>Humidity
+              <p id="percent">45%</p>
+            </div>
+            <div class="wind">
+              <i class="fa-solid fa-wind"></i>Wind
+              <p id="speed">12 km/h</p>
+            </div>
+            <div class="feel">
+              <i class="fa-solid fa-temperature-three-quarters"></i>Feels like
+              <p id="feel">29&deg;c</p>
+            </div>
+          </div>
         </div>
-        <div class="date">
-          <p id="day">sunday</p>
-          ,
-          <p id="date">0000</p>
-        </div>
-        <div class="temp">
-          <p id="cel">27&deg;c</p>
-        </div>
-        <div class="cloud">
-          partly cloudy
-          <div class="updown">
-            <p id="up"><i class="fa-solid fa-arrow-up-long"></i>80</p>
-            <p id="down"><i class="fa-solid fa-arrow-down-long"></i>90</p>
+
+        <div class="forcast">
+          <p class="forcast-title">7-Day Forcast</p>
+
+          <div class="sat day-row">
+            <p class="day-name">Saturday</p>
+            <i class="fa-solid fa-cloud-rain"></i>
+            <p id="satmax" class="days hi">37&deg;</p>
+            <p id="satmin" class="days lo">20&deg;</p>
+          </div>
+          <div class="sun day-row">
+            <p class="day-name">Sunday</p>
+            <i class="fa-solid fa-sun"></i>
+            <p id="sunmax" class="days hi">37&deg;</p>
+            <p id="sunmin" class="days lo">20&deg;</p>
+          </div>
+          <div class="mon day-row">
+            <p class="day-name">Monday</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p id="monmax" class="days hi">37&deg;</p>
+            <p id="monmin" class="days lo">20&deg;</p>
+          </div>
+          <div class="tue day-row">
+            <p class="day-name">Tuesday</p>
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p id="tuemax" class="days hi">37&deg;</p>
+            <p id="tuemin" class="days lo">20&deg;</p>
+          </div>
+          <div class="wed day-row">
+            <p class="day-name">Wednesday</p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p id="wedmax" class="days hi">37&deg;</p>
+            <p id="wedmin" class="days lo">20&deg;</p>
+          </div>
+          <div class="thu day-row">
+            <p class="day-name">Thursday</p>
+            <i class="fa-solid fa-sun"></i>
+            <p id="thumax" class="days hi">37&deg;</p>
+            <p id="thumin" class="days lo">20&deg;</p>
+          </div>
+          <div class="fri day-row">
+            <p class="day-name">Friday</p>
+            <i class="fa-solid fa-sun"></i>
+            <p id="frimax" class="days hi">37&deg;</p>
+            <p id="frimin" class="days lo">20&deg;</p>
           </div>
         </div>
       </div>
 
-      <div class="analysis">
-        <div class="humidity">
-          <i class="fa-solid fa-droplet"></i>humidity
-          <br />
-          <p id="percent">45&percnt;</p>
-        </div>
-        <div class="wind">
-          <i class="fa-solid fa-wind"></i>Wind
-          <br />
-          <p id="speed">12km/h</p>
-        </div>
-        <div class="feel">
-          <i class="fa-solid fa-temperature-three-quarters"></i>Fells like
-          <br />
-          <p id="feel">29&deg;c</p>
+      <div class="hourly">
+        <p class="hourly-title">Hourly Forcast</p>
+        <div class="hourly-scroll">
+          <div class="hour now">
+            <p class="hr">Now</p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="ht">28&deg;</p>
+          </div>
+          <div class="hour">
+            <p class="hr">10 AM</p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="ht">29&deg;</p>
+          </div>
+          <div class="hour">
+            <p class="hr">11 AM</p>
+            <i class="fa-solid fa-sun"></i>
+            <p class="ht">30&deg;</p>
+          </div>
+          <div class="hour">
+            <p class="hr">12 PM</p>
+            <i class="fa-solid fa-sun"></i>
+            <p class="ht">30&deg;</p>
+          </div>
+          <div class="hour">
+            <p class="hr">01 PM</p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="ht">31&deg;</p>
+          </div>
+          <div class="hour">
+            <p class="hr">02 PM</p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="ht">31&deg;</p>
+          </div>
+          <div class="hour">
+            <p class="hr">03 PM</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p class="ht">30&deg;</p>
+          </div>
+          <div class="hour">
+            <p class="hr">04 PM</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p class="ht">29&deg;</p>
+          </div>
+          <div class="hour">
+            <p class="hr">05 PM</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p class="ht">28&deg;</p>
+          </div>
+          <div class="hour">
+            <p class="hr">06 PM</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p class="ht">27&deg;</p>
+          </div>
         </div>
       </div>
-      <div class="forcast">
-        <p>7 Day forcast</p>
 
-        <div class="sat">
-          <p>Sarurday</p>
-          <i class="fa-solid fa-cloud-rain"></i>
-          <p id="satmax" class="days">37&deg;</p>
-          <p id="satmin" class="days">20&deg;</p>
+      <div class="stats">
+        <div class="stat">
+          <i class="fa-solid fa-sun"></i>
+          <span>Sunrise<br /><b>05:12 AM</b></span>
         </div>
-        <div class="sun">
-          <p>Sunday</p>
-          <i class="fa-solid fa-cloud-rain"></i>
-          <p id="sunmax" class="days">37&deg;</p>
-          <p id="sunmin" class="days">20&deg;</p>
+        <div class="stat">
+          <i class="fa-solid fa-moon"></i>
+          <span>Sunset<br /><b>07:15 PM</b></span>
         </div>
-        <div class="mon">
-          <p>Monday</p>
-          <i class="fa-solid fa-cloud-rain"></i>
-          <p id="monmax" class="days">37&deg;</p>
-          <p id="monmin" class="days">20&deg;</p>
+        <div class="stat">
+          <i class="fa-solid fa-eye"></i>
+          <span>Visibility<br /><b>10 km</b></span>
         </div>
-        <div class="tue">
-          <p>Tuesday</p>
-          <i class="fa-solid fa-cloud-rain"></i>
-          <p id="tuemax" class="days">37&deg;</p>
-          <p id="tuemin" class="days">20&deg;</p>
-          <p></p>
+        <div class="stat">
+          <i class="fa-solid fa-gauge"></i>
+          <span>Pressure<br /><b>1012 hPa</b></span>
         </div>
-        <div class="wed">
-          <p>Wednesday</p>
-          <i class="fa-solid fa-cloud-rain"></i>
-          <p id="wedmax" class="days">37&deg;</p>
-          <p id="wedmin" class="days">20&deg;</p>
-        </div>
-        <div class="thu">
-          <p>Thursday</p>
-          <i class="fa-solid fa-cloud-rain"></i>
-          <p id="thumax" class="days">37&deg;</p>
-          <p id="thumin" class="days">20&deg;</p>
-        </div>
-        <div class="fri">
-          <p>Friday</p>
-          <i class="fa-solid fa-cloud-rain"></i>
-          <p id="frimax" class="days">37&deg;</p>
-          <p id="frimin" class="days">20&deg;</p>
+        <div class="stat">
+          <i class="fa-solid fa-circle-radiation"></i>
+          <span>UV Index<br /><b>6 (High)</b></span>
         </div>
       </div>
     </div>
